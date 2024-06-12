@@ -18,16 +18,49 @@ const clearError = (input, errorElement) => {
     input.classList.remove('invalid');
     errorElement.style.display = 'none';
 };
- form.addEventListener('submit, function(e)'); {
+ form.addEventListener('submit, function(e)'); 
+ {
     emailError.preventDefault();
     let valid = true; 
-    if (nameInput.value.trim() ==='')
- }
+    if (nameInput.value.trim() ==='');
+}
 
  {
-    showError(nameInput, nameError 'Por favor, insira seu nome.');
+    showError(nameInput, nameError, 'Por favor, insira seu nome.');
+    valid = false;
     
- }
+ } 
+ else {
+    clearError(nameInput,nameError);
+}
+
+if (condition) {
+    (emailInput.value.trim() === '' || !/\S+@\S+\.\S+/.test(emailInput.alue))
+    
+}
+
+{
+    showError(emailInput, emailError,  'Por favor, insira um email válido.');
+    valid = false;
+}
+
+else {
+    clearError(emailInput,emailError);
+}
+
+if (condition) 
+    (messageInput.value.trim() ===''){
+     showError(messageInput,messageError, 'Por favor, insira sua mensagem.');
+     valid = false;
+    }
+    
+
+
+
+ 
+ 
+
+ 
 
 
     
