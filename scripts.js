@@ -53,6 +53,16 @@ if (condition)
      showError(messageInput,messageError, 'Por favor, insira sua mensagem.');
      valid = false;
     }
+
+else {
+    clearError(messageInput,messageError);
+}
+
+if (valid) {
+    responde.textContent = 'Mensagem enviada com sucesso!';
+    responde.style.color = '#4caf50'
+    
+}
     
 
 
