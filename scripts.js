@@ -60,9 +60,15 @@ else {
 
 if (valid) {
     responde.textContent = 'Mensagem enviada com sucesso!';
-    responde.style.color = '#4caf50'
-    
+    responde.style.color = '#4caf50';
+    form.requestFullscreen();    
+
+} else {
+    Response.textContent = 'Por favor, corrija os erros no formulario.';
+    Response.style.color = 'red';
 }
+
+
     
 
 

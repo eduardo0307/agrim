@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #dfeed1;
     color: #333;
 }
 
@@ -17,7 +17,7 @@ header {
     z-index: 100%;
 }
 
-header {
+header h1 {
     margin: 0;
 
 }
@@ -35,6 +35,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #333;
 }
 
 section {
@@ -48,21 +53,68 @@ section {
 #home {
     position: relative;
     text-align: center;
-    color: rgb(4, 0, 226);
+    color: white;
+    background-image: url('plant.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+  
+    border-radius: 8px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     
 }
 
 .banner {
-    background: url('imagem.png') no-repeat center center/cover;
-    background: url('images.png') no-repeat center center/cover;
-    background: url('imagen.png') no-repeat center center/cover;
-    padding: 100px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
     border-radius: 8px;
+    max-width: 80%;          
+    padding: 10px 20px;
+    border-radius: 8px
+}
+
+.banner-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.banner-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 #gallery, #testimanials, #news {
    text-align: center;
 
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .carousel {
@@ -125,6 +177,12 @@ section {
 
 .news-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 015px rgba(0, 0, 0, 0, 0.2);
+}
+
+.video-cantainer {
+    margin: 20px auto;
+    flex-direction: column;
 }
 
 form{
@@ -141,6 +199,7 @@ form input, form textarea, form button {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    transition: border-color 0.3s;
 }
 
 form button {
@@ -148,6 +207,7 @@ form button {
     color: white;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 form button:hover {
@@ -162,8 +222,8 @@ form button:hover {
 
 #response {
     margin-top: 20px;
-    color: #4caf50;
-    font-weight: bolder;
+    color: #4CAF50;
+    font-weight: bold;
 }
 
 footer {
