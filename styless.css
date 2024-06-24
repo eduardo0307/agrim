@@ -2,19 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #dfeed1;
+    background-color: #e8f5e9;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #4CAf50;
+    background-color: #228b22;
     color: white;
     padding: 15px 0;
     text-align: center;
     position: fixed;
     position: initial;
+    width: 100%;
     top: 0;
-    z-index: 100%;
+    z-index: 1000;
 }
 
 header h1 {
@@ -92,7 +94,11 @@ section {
     line-height: 1.6;
 }
 
-#gallery, #testimanials, #news {
+#about {
+    background-color: #90ee90;
+}
+
+#gallery, #testimanials, #news, #video {
    text-align: center;
 
 }
@@ -180,6 +186,14 @@ section {
     box-shadow: 0 015px rgba(0, 0, 0, 0, 0.2);
 }
 
+.news-card h3 {
+    color: #8b4513;
+}
+
+.news-card a {
+    color: #1100ff;
+}
+
 .video-cantainer {
     margin: 20px auto;
     flex-direction: column;
@@ -203,7 +217,7 @@ form input, form textarea, form button {
 }
 
 form button {
-    background-color: #4CAf50;
+    background-color: #228b22;
     color: white;
     border: none;
     cursor: pointer;
@@ -211,7 +225,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #45a049;
+    background-color: #006400;
 }
 
 .error {
@@ -229,7 +243,7 @@ form button:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #4CAf50;
+    background-color: #228b22;
     color: white;
     position: relative;
 }
