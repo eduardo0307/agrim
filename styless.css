@@ -109,6 +109,7 @@ section h2 {
 
 #about {
     background-color: #90ee90;
+    text-align: center;
 }
 
 #what-is, #purpose {
@@ -200,10 +201,12 @@ section h2 {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0, 1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .testimonial p {
     font-style: italic;
+    text-align: center;
 }
 
 .news-card {
@@ -218,8 +221,6 @@ section h2 {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
 }
-
-
 
 .news-card:hover {
     color: #388e3c;
