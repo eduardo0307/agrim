@@ -8,6 +8,10 @@
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+         <link rel="manifest" href="/manifest.json">
+         <link rel="styleheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
      </head>
      <body>
          <header class="animate__animated animate__fadeInDown">
@@ -24,7 +28,12 @@
                      <li><a href="#news">Noticia</a></li>
                      <li><a href="#video">Video</a></li>
                      <li><a href="#contact">Contato</a></li>
-                 </ul>                
+                 </ul>
+                 <div id="meni-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                 </div>                
              </nav>                      
          </header>
          <section id="home">
@@ -199,11 +208,24 @@
 
          <footer>
              <p>&copy; 2024 AgroConexão: Do Campo à Cidade. Todos os direitos reservados.</p>
+             9
          </footer>
 
          <script src="styless.css"></script>
          
          <script src="scripts.js"></script>
+
+         <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                        console.log('serviceWorker resgistro com sucesso: ', registration);
+                    }).catch(error => {
+                        console.log('falha no registro do ServiceWorker: ', error);
+                     });                    
+                 });                
+             }
+         </script>
                
      </body>
 
