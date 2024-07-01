@@ -243,3 +243,43 @@ Document.getElementById('menu-toggler').addEventListener('click', function() {
     const navLinks = document.getElementById('nav-links');
     navLinks.classList.toggle('show');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+     async function fetchNews() {
+          const apikey =
+          '2b61cb05bd7b4d03a77f8b00658557ad';
+          const url =
+          'https://newsapi.org/v2/everything?q=agriculture+agro$language=pt&sortBy=publishedAt&apiKey=${apiKey}';
+
+          try {
+               const response = await
+               fetch(url);
+               const data = await
+               response.json();
+               displayNews(data.articles);
+          } catch (error) {
+               console.error('Erro ao buscar notícia:', error);
+          }
+     }
+
+     function displayNews(articles) {
+          const newsContainer = 
+          document.getElementById('news-container');
+          newsContainer.innerHTML = '';
+
+          articles.forEach(articles => {
+               const newsCard =
+               document.createElement('div');
+
+               newsCard.classList.add('news-card');
+               newsCard.innerHTML = '
+               <h3>${article.title}</h3>
+               <p>${articles.description}</p>
+               <a href="${article.url}" target="_blank">Leia mais</a>
+               ';
+               newsContainer.appendChild(newsCard);
+          });
+     }
+
+     fetchNews();
+});

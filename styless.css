@@ -207,10 +207,12 @@ section h2 {
 }
 
 .testimonial p {
+     display: flex;
      font-style: italic;
      text-align: center;
 }
 .testimonial h2 {
+     display: flex;
      text-align: center;
 }
 
@@ -437,4 +439,8 @@ footer {
     #menu-toggle {
         display: flex;
     }
+}
+
+#news-container {
+     display: flex;
 }
