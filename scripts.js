@@ -283,3 +283,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
      fetchNews();
 });
+
+document.getElementById('reviewForm').addEventListener('submit', function(event) {
+     event.preventDefault();
+     
+     // Get form values
+     var name = document.getElementById('name').value;
+     var rating = document.getElementById('rating').value;
+     var review = document.getElementById('review').value;
+     
+     // Create a new review element
+     var reviewItem = document.createElement('li');
+     reviewItem.innerHTML = `<strong>${name}</strong> - ${rating} Estrela(s)<br>${review}`;
+     
+     // Add the review to the list
+     document.getElementById('reviewsList').appendChild(reviewItem);
+     
+     // Reset the form
+     document.getElementById('reviewForm').reset();
+ });

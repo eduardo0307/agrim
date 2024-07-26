@@ -3,7 +3,7 @@
      <head>
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width,initial-scale=1.0">
-         <title>Do Campo á Cidade: Criando Oportunidades</title>
+         <title></title>
          <link rel="stylesheet" href="styless.css">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -14,14 +14,14 @@
         
      </head>
      <body>
-         <header class="animate__animated animate__fadeInDown">
-             <h1>AgroConexão: Do Campo á Cidade</h1>
+         <header class="animate__animated animate__fadeInDown">              
+             <h1>AgroConexão</h1>
              <nav>
                  <ul>
                      <li><a href="#home">Início</a></li>
                      <li><a href="#about">Sobre</a></li>
                      <li><a href="#what-is">O que é?</a></li>
-                      <li><a href="#purpose">Para que?</a></li>
+                     <li><a href="#purpose">Para que?</a></li>
                      <li><a href="application">Aplicações</a></li>
                      <li><a href="#gallery">Galeria</a></li>
                      <li><a href="#testimonials">Depoimento</a></li>
@@ -141,7 +141,31 @@
                  </a>
                  <a href="drone1.jpg" data-lightbox="gallery" data-title="Descrição da imagem 2">
                      <img src="drone1.jpg" class="gallery-img active animate__animated animate__fadeIn">
-                 </a>                          
+                 </a>
+                 <a href="i.jpg" data-lightbox="gallery" data-title="Descriçaõ imagem 1">
+                    <img src="i.jpg" class="gallery-img active animate__animated animate__fadeIn">                   
+                </a>
+                <a href="n.jpg" data-lightbox="gallery" data-title="Descrição da imagem 2">
+                    <img src="n.jpg" class="gallery-img active animate__animated animate__fadeIn">
+                </a>
+                <a href="o.jpg" data-lightbox="gallery" data-title="Descrição da imagem 2">
+                    <img src="o.jpg" class="gallery-img active animate__animated animate__fadeIn">
+                </a>
+                <a href="o1.jpg" data-lightbox="gallery" data-title="Descrição da imagem 2">
+                    <img src="o1.jpg" class="gallery-img active animate__animated animate__fadeIn">
+                </a>
+                <a href="r.jpg" data-lightbox="gallery" data-title="Descrição da imagem 2">
+                    <img src="r.jpg" class="gallery-img active animate__animated animate__fadeIn">
+                </a>
+                <a href="v.jpg" data-lightbox="gallery" data-title="Descrição da imagem 2">
+                    <img src="v.jpg" class="gallery-img active animate__animated animate__fadeIn">
+                </a>
+                <a href="x.jpg" data-lightbox="gallery" data-title="Descrição da imagem 2">
+                    <img src="x.jpg" class="gallery-img active animate__animated animate__fadeIn">             
+                </a> 
+                <a href="d.avif" data-lightbox="gallery" data-title="Descrição da imagem 2">
+                    <img src="d.avif" class="gallery-img active animate__animated animate__fadeIn">             
+                </a>                         
              </div>
              <button class="carousel-btn prev">Anterior</button>
              <button class="carousel-btn next">Proximo</button>           
@@ -182,17 +206,16 @@
              </div>
          </section>
 
-         <section id="news" class="animate_animated animate_fadeIn">
-            <h2>Notícias</h2>
-            <div id="news-container"></div>
-         </section>
+         
+         <section id="video" class="animate__animated animate__fadeIn">
+            <h2>Video</h2>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                
+            </video>
 
-         <section id="video">
-             <h2 class="animate__animated animate__fadeInUp">Video: Agricultura de Precisão</h2>
-             <div class="video-container">
-                 <iframe width="560" height="315" src="x.mp4" title="Agricultura de precisão" frameborder="0" allowfullscreen></iframe>
-             </div>
          </section>
+         
 
          <section id="contact">
              <h2 class="animate__animated animate__fadeInUp">contato</h2>
@@ -211,9 +234,34 @@
              <div id="resonde"></div>
          </section>
 
+         <section id="reviews" class="animate__animated animate__fadeIn">
+            <h2>Avaliações</h2>
+            <div class="review-form">
+                <h3>Deiche sua Avaliação</h3>
+                <form id="reviewForm">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="rating">Nota:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="5">5 Estrelas</option>
+                        <option value="4">4 Estrelas</option>
+                        <option value="3">3 Estrelas</option>
+                        <option value="2">2 Estrelas</option>
+                        <option value="1">1 Estrelas</option>
+                    </select>
+                    <label for="review">Comentário:</label>
+                    <textarea id="review" name="review" rows="4" required></textarea>
+                    <button type="submit">Enviar Avaliação</button>
+                </form>
+            </div>
+            <div class="review-lint">
+                <h3>Avaliações Recentes</h3>
+                <ul id="reviewsLIst"></ul>
+            </div>
+         </section>
+
          <footer>
              <p>&copy; 2024 AgroConexão: Do Campo à Cidade. Todos os direitos reservados.</p>
-             9
          </footer>
 
          <script src="styless.css"></script>
