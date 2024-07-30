@@ -80,7 +80,7 @@ section h2 {
      position: relative;
      text-align: center;
      color: white;
-     background-image: url('plant.jpg');
+     background-image: url('Santos.jpg');
      background-size: cover;
      background-position: center;
      padding: 100px 20px; 
@@ -102,7 +102,9 @@ section h2 {
      border-radius: 8px;
      max-width: 80%;          
      padding: 10px 20px;
-     border-radius: 8px
+     border-radius: 8px;
+    
+        
 }
 
 .banner-text {
@@ -117,8 +119,11 @@ section h2 {
 }
 
 .banner-text p {
-     font-size: 1.2rem;
-     line-height: 1.6;
+  font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
 }
 
 #about {
