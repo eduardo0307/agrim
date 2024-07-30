@@ -8,23 +8,21 @@ body {
      transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-header {
+header {    
      background-color: #228b22;
      color: white;
-     padding: 15px 0;
+
      text-align: center;
-     position: fixed;
-     position: initial;
-     width: 100%;
-     top: 0;
-     z-index: 1000;
-     transition: background-color 0.3 ease;
+   
 }
 
 .header-container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
      display: flex;
      align-items: center;
-     justify-content: center;
+     justify-content: space-between;
     
 }
 .header-container .logo {
@@ -38,14 +36,19 @@ header {
 
 }
 
+main {
+     margin-top: 70px;
+}
+
 nav ul {
      list-style-type: none;
      padding: 0;
+     text-align: center;
 }
 
 nav ul li {
      display: inline;
-     margin: 0 10px;
+     margin: 0 15px;
 }
 
 nav ul li a {
@@ -63,7 +66,7 @@ section {
      margin: 20px 0;
      background-color: #fff;
      border-radius: 8px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0, 1);
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
      transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -80,8 +83,7 @@ section h2 {
      background-image: url('plant.jpg');
      background-size: cover;
      background-position: center;
-     padding: 100px 20px;
-  
+     padding: 100px 20px; 
      border-radius: 8px; 
      display: flex;
      justify-content: center;
@@ -125,6 +127,7 @@ section h2 {
 }
 
 #what-is, #purpose, #application, #precision-agriculture {
+     background-color: #90ee90;
      padding: 20px;
      margin: 20px;
      background-color: #e8f5e9;
@@ -136,7 +139,7 @@ section h2 {
      color: #228b22;
 }
 
-#what-is p, #purpose #application, #precision-agriculture {
+#what-is p, #purpose p, #application p, #precision-agriculture p {
      color: #333;
      line-height: 1.6;
 }
@@ -149,6 +152,7 @@ section h2 {
 }
 
 .gallery-container {
+     
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
@@ -192,9 +196,9 @@ section h2 {
      color: white;
      border: none;
      padding: 10px;
-     padding: absolute;
+     position: absolute;
      top: 50%;
-     transition: translateY(-50%);
+     transform: translateY(-50%);
      cursor: pointer;
        
 }
@@ -206,26 +210,41 @@ section h2 {
      right: 10px;
 }
 
+#testimonial {
+     
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+
 .testimonial {
-     margin: 20px auto;
-     max-width: 600px;
-     margin: 20px 2.5%;
-     padding: 20px;
-     background-color: #f9f9f9;
+     
+     
      border-radius: 8px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0, 1);
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     transition: transform 0.2s;
      transition: background-color 0.3s ease, box-shadow 0.3s ease;
      text-align: center;
 }
 
-.testimonial p {
-     display: center;
-     font-style: italic;
-     text-align: center;
+.testimonial:hover {
+     color: #388e3c;
+     transform: translateY(-5px);
+     box-shadow: 0 015px rgba(0, 0, 0, 0.2);
 }
-.testimonial h2 {
-     display: flex;
-     text-align: center;
+
+.testimonial h3 {
+     color: #8b4513;
+     margin-top: 0;
+}
+
+.testimonial a {
+     text-decoration: none;
+     color: #1100ff;
+     font-weight: bold;
+     transition: color 0.3s ease;
 }
 
 .news-card {
@@ -235,16 +254,16 @@ section h2 {
      padding: 20px;
      background-color: #f9f9f9;
      border-radius: 8px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0, 1);
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
      transition: transform 0.2s;
      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-     text-align: ce;
+     text-align: center;
 }
 
 .news-card:hover {
      color: #388e3c;
      transform: translateY(-5px);
-     box-shadow: 0 015px rgba(0, 0, 0, 0, 0.2);
+     box-shadow: 0 015px rgba(0, 0, 0, 0.2);
 }
 
 .news-card h3 {
@@ -288,7 +307,7 @@ section h2 {
      transition: border-color 0.3s ease;
 }
 
-#contact-form input:focus, #contavt-form {
+#contact-form input:focus, #contact-form textarea:focus {
      border-color: #4caf50;
 }
 
@@ -310,7 +329,7 @@ label {
      margin: 10px 0 5px;
 }
 
-input textarea {
+input, textarea {
      width: 100%;
      padding: 10px;
      margin-bottom: 10px;
@@ -374,14 +393,16 @@ form button:hover {
 
 footer {
      text-align: center;
-     padding: 20px 0;
+    
      background-color: #228b22;
      color: white;
-     position: fixed;
-     width: 100%;
-     bottom: 0;
-     transition: background-color 0.3s ease;
+   
 }
+
+footer a {
+     color: #00ff00;
+     text-decoration: none;
+ }
 
 @media (max-width: 768px) {
     nav ul li {
@@ -421,7 +442,7 @@ footer {
     }
 
     .banner {
-        padding: 50px 10 px;
+        padding: 50px 10px;
     }
 
     .banner h2, .banner p {
@@ -511,3 +532,36 @@ footer {
      margin-bottom: 10px;
      text-align: left;
 }
+
+.btn-avaliacoa {
+     display: inline-block;
+     background-color: #4CAF50;
+     color: white;
+     padding: 10px 20px;
+     border-radius: 4px;
+     text-decoration: none;
+     font-weight: bold;
+     transition: background-color 0.3s ease;
+ }
+ 
+ .btn-avaliacao:hover {
+     background-color: #45a049;
+ }
+
+ .btn-voltar {
+     display: inline-block;
+     background-color: #ff5722;
+     color: white;
+     padding: 10px 20px;
+     border-radius: 4px;
+     text-decoration: none;
+     font-weight: bold;
+     transition: background-color 0.3s ease;
+     margin-bottom: 20px;
+ }
+ 
+ .btn-voltar:hover {
+     background-color: #e64a19;
+ }
+
+ 
