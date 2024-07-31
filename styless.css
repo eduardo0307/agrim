@@ -131,7 +131,7 @@ section h2 {
      text-align: center;
 }
 
-#what-is, #purpose, #application, #precision-agriculture {
+#what-is, #purpose, #application, #precision-agriculture, #money, #challenges, #help, #time, #curiosity {
      background-color: #90ee90;
      padding: 20px;
      margin: 20px;
@@ -140,18 +140,27 @@ section h2 {
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#what-is h2, #purpose h2, #application h2, #precision-agriculture h2 {
+#what-is h2, #purpose h2, #application h2, #precision-agriculture h2, #money h2, #challenges h2, #help h2, #time h2, #curiosity h2 {
      color: #228b22;
 }
 
-#what-is p, #purpose p, #application p, #precision-agriculture p {
-     color: #333;
-     line-height: 1.6;
+#what-is h3, #purpose h3, #application h3, #precision-agriculture h3, #money h3, #challenges h3, #help h3, #time h3, #curiosity h3 {
+     text-align: left; /* Alinha o texto à esquerda */
 }
 
+#what-is p, #purpose p, #application p, #precision-agriculture p, #money p, #challenges p, #help p, #time p, #curiosity p {
+     color: #333;
+     line-height: 1.6;
+     font-size: 18px;
+     text-align: left; /* Alinha o texto à esquerda */
+}
 
+#what-is ul, #purpose ul, #application ul, #precision-agriculture ul, #money ul, #challenges ul, #help ul, #time ul, #curiosity ul{
+     font-size: 18px;
+     text-align: left; /* Alinha o texto à esquerda */
+}
 
-#gallery, #testimanials, #news, #video, #what-is, #purpose, #application {
+#gallery, #testimanials, #news, #video, #what-is, #purpose, #application, #money, #challenges, #help, #time, #curiosity  {
     text-align: center;
 
 }
@@ -285,10 +294,11 @@ section h2 {
 
 #video {
      text-align: center;
-    padding: 50px 0;
+     padding: 50px 0;
 }
 
 #video video {
+     width: 1000px;
      max-width: 100%;
      height: auto;
      border: 2px solid #ddd;
@@ -538,20 +548,6 @@ footer a {
      text-align: left;
 }
 
-.btn-avaliacoa {
-     display: inline-block;
-     background-color: #4CAF50;
-     color: white;
-     padding: 10px 20px;
-     border-radius: 4px;
-     text-decoration: none;
-     font-weight: bold;
-     transition: background-color 0.3s ease;
- }
- 
- .btn-avaliacao:hover {
-     background-color: #45a049;
- }
 
  .btn-voltar {
      display: inline-block;

@@ -23,14 +23,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #000000;
+    background-color: #000;
     overflow: hidden;
 }
 
 .login-box {
     position: relative;
     width: 400px;
-    height: 450px;
+    height: 470px;
     background: #191919;
     border-radius: 20px;
     display: flex;
@@ -46,10 +46,10 @@ h2 {
 }
 
 .input-check:checked~h2 {
-    color: #00f7ff;
+    color: #00ff00;
     text-shadow:
-        0 0 15px #00f7ff,
-        0 0 30px #00f7ff;
+        0 0 15px #00ff00,
+        0 0 30px #00ff00;
 }
 
 .input-box {
@@ -69,8 +69,8 @@ h2 {
 }
 
 .input-check:checked~.input-box .input-line {
-    background: #00f7ff;
-    box-shadow: 0 0 10px #00f7ff;
+    background: #00ff00;
+    box-shadow: 0 0 10px #00ff00;
 }
 
 .input-box label {
@@ -90,8 +90,8 @@ h2 {
 }
 
 .input-check:checked~.input-box label {
-    color: #00f7ff;
-    text-shadow: 0 0 10px #00f7ff;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
 }
 
 .input-box input {
@@ -101,14 +101,14 @@ h2 {
     border: none;
     outline: none;
     font-size: 1em;
-    color: #fff;
+    color: #00ff00;
     padding: 0 35px 0 5px;
     transition: .5s ease;
 }
 
 .input-check:checked~.input-box input {
-    color: #00f7ff;
-    text-shadow: 0 0 5px #00f7ff;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
 }
 
 .input-box .icon {
@@ -121,8 +121,8 @@ h2 {
 }
 
 .input-check:checked~.input-box .icon {
-    color: #00f7ff;
-    filter: drop-shadow(0 0 5px #00f7ff);
+    color: #00ff00;
+    filter: drop-shadow(0 0 5px #00ff00);
 }
 
 .remember-forgot {
@@ -135,8 +135,8 @@ h2 {
 }
 
 .input-check:checked~.remember-forgot {
-    color: #00f7ff;
-    text-shadow: 0 0 10px #00f7ff;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
 }
 
 .remember-forgot label input {
@@ -146,7 +146,7 @@ h2 {
 }
 
 .input-check:checked~.remember-forgot label input {
-    accent-color: #00f7ff;
+    accent-color: #00ff00;
 }
 
 .remember-forgot a {
@@ -160,10 +160,10 @@ h2 {
 }
 
 .input-check:checked~.remember-forgot a {
-    color: #00f7ff;
+    color: #00ff00;
 }
 
-button {
+.btn-cadastrar {
     width: 100%;
     height: 40px;
     background: #fff;
@@ -175,24 +175,32 @@ button {
     color: #191919;
     font-weight: 500;
     transition: .5s ease;
+    align-items: center;
+    background-color: #b1b1b1;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
-
-.input-check:checked~button {
-    background: #00f7ff;
-    box-shadow: 0 0 15px #00f7ff, 0 0 15px #00f7ff;
+ 
+.btn-cadastrar:hover {
+    background: #00ff00;
+    box-shadow: 0 0 15px #00ff00, 0 0 15px #00ff00;
+    align-items: center;
 }
 
 .register-link {
     color: #fff;
     font-size: .9em;
-    text-align: center;
+    text-align:center;
     margin: 25px 0 10px;
     transition: .5s ease;
 }
 
 .input-check:checked~.register-link {
-    color: #00f7ff;
-    text-shadow: 0 0 10px #00f7ff;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
 }
 
 .register-link p a {
@@ -207,7 +215,7 @@ button {
 }
 
 .input-check:checked~.register-link p a {
-    color: #00f7ff;
+    color: #00ff00;
 }
 
 .login-light {
@@ -217,7 +225,7 @@ button {
     transform: translateX(-50%);
     width: 500px;
     height: 10px;
-    background: #00f7ff;
+    background: #00ff00;
     border-radius: 20px;
 }
 
@@ -314,29 +322,14 @@ button {
 .input-check:checked~.toggle .text.on {
     top: 76px;
     opacity: 1;
-    color: #00f7ff;
+    color: #00ff00;
     text-shadow:
-        0 0 15px #00f7ff,
-        0 0 30px #00f7ff,
-        0 0 45px #00f7ff,
-        0 0 60px #00f7ff;
+        0 0 15px #00ff00,
+        0 0 30px #00ff00,
+        0 0 45px #00ff00,
+        0 0 60px #00ff00;
 }
-
-.btn-cadastrar {
-    align-items: center;
-    background-color: #b1b1b1;
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
- 
-.btn-cadastrar:hover {
-    background-color: #f1f1f1;
-    align-items: center;
-}
-</style>
+    </style>
 </head>
 
 <body>
